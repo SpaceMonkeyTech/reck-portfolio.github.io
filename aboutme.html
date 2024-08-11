@@ -3,69 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Space Monkey">
+    <meta name="keywords" content="Brand Portfolio, About Me, HTML, CSS">
+    <meta name="author" content="JR Benedicto">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,900;1,300;1,500;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,300;0,500;0,900;1,300;1,500;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>About Me</title>
 </head>
 <body>
     <main>
         <nav>
-            <img src="/web project/images/logo2.png" alt="Space Monkey Logo">
-            <ul>
-                <li>
-                    <a href="/web project/home.html">Home</a>
-                </li>
-                <li>
-                    <a href="/web project/aboutme.html">About Me</a>
-                </li>
-                <li>
-                    <a href="/web project/portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                    <a href="/web project/lnc.html">Licenses and Certifications</a>
-                </li>
-            </ul>
-            <input type="button" value="Let's Start Something!">
+            <img src="assets/images/logo2.png" alt="Space Monkey Logo">
+            <label for="check" class="checkbox">
+                <ion-icon name="menu-outline"></ion-icon>
+            </label>
+            <input type="checkbox" name="check" id="check">
+            <div id="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="aboutme.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="lnc.html">Licenses and Certifications</a>
+                    </li>
+                </ul>
+                <input class="contact" type="button" id="menu-contact" value="Let's Start Something!">
+            </div>
         </nav>
-        <section>
-            <img src="" alt="John Reck Benedicto">
-            <h1 id="about-header">Hi! I'm Reck, founder of Space Monkey.</h1>
-            <p>
-                A Civil Engineer who entered the field of Web Development and Data Analytics . A young professional with a background in Quantity Surveying who constantly learning and expanding my knowledge in the field of Data Analytics and Web Development. With a strong foundation in quantity surveying, I bring a meticulous and analytical approach to the field of data analytics. My background has equipped me with a keen eye for detail, proficiency in cost estimation, and expertise in data interpretation. Transitioning from quantity surveying to data analytics, I now excel at transforming raw data into actionable insights, ensuring accuracy and efficiency in every project. My unique perspective bridges the gap between traditional surveying and modern data-driven decision-making, delivering precise and innovative solutions tailored to meet diverse business needs.
-            </p>
+        <section class="about" id="about_summary">
+            <img src="assets/images/BENEDICTO, JOHN RECK T SC.jpg" alt="John Reck Benedicto">
+            <div class="about_text"> 
+                <h1>Hi! I'm Reck, founder of <span id="space">Space</span> <span id="monkey">Monkey</span>.</h1>
+                <br>
+                <p id="summary">
+                    A Civil Engineer who entered the field of Web Development and Data Analytics. A young professional with a background in Quantity Surveying who constantly learning and expanding my knowledge in the field of Data Analytics and Web Development. 
+                    <br><br>
+                    With a strong foundation in quantity surveying, I bring a meticulous and analytical approach to the field of data analytics. My background has equipped me with a keen eye for detail, proficiency in cost estimation, and expertise in data interpretation. Transitioning from quantity surveying to data analytics, I now excel at transforming raw data into actionable insights, ensuring accuracy and efficiency in every project. My unique perspective bridges the gap between traditional surveying and modern data-driven decision-making, delivering precise and innovative solutions tailored to meet diverse business needs.
+                </p>
+            </div> 
         </section>
-        <section>
+        <section class="education">
             <h2>Education</h2>
-            <p>
-                <b>Mapua University</b>
-                <br>
-                <i>Bachelor of Science in Civil Engineering</i>
-                <br>
-                Graduated with a comprehensive understanding of civil engineering principles, project management, and analytical techniques. This solid foundation has been instrumental in my transition to data analytics and web design, allowing me to approach digital projects with precision and a methodical mindset.
-            </p>
+            <div>
+            <div class="about_text">
+                <div id="school">
+                    <h2>Mapua University</h2>
+                    <p> 
+                        <i>Bachelor of Science in Civil Engineering</i>
+                        <br><br>
+                        Graduated with a comprehensive understanding of civil engineering principles, project management, and analytical techniques. This solid foundation has been instrumental in my transition to data analytics and web design, allowing me to approach digital projects with precision and a methodical mindset.
+                    </p>
+                </div>
+                <img src="assets/images/mapua_logo.png" alt="Mapua University Logo">
+            </div>
         </section>
-        <section>
+        <section class="experience">
             <h2>Professional Experience</h2>
-            <p>
-                <b>Quantity Surveyor</b>
-                <br>
-                Leveraged expertise in cost estimation, project management, and data analysis to ensure accurate budgeting and efficient resource allocation in various construction projects. This role honed my attention to detail and analytical skills, which I now apply to data analytics and web design to deliver precise, data-driven solutions.
-            </p>
+            <div id="exp">
+                <img src="assets/images/quantity_surveying.jpg" alt="">
+                <p>
+                    <span>Quantity Surveying</span>
+                    <br><br>
+                    Leveraged expertise in cost estimation, project management, and data analysis to ensure accurate budgeting and efficient resource allocation in various construction projects. This role honed my attention to detail and analytical skills, which I now apply to data analytics and web design to deliver precise, data-driven solutions.
+                </p>
+            </div>
         </section>
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Data Analysis</li>
-                <li>Power BI</li>
-                <li>Microsoft Excel</li>
-                <li>Python</li>
-                <li>Cost Management</li>
-            </ul>
+        <section class="skills">
+            <h2>Technical Skills</h2>
+            <div id="skills_arrangement">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/analysis.png" class="card-img-top" alt="Data Analysis">
+                    <div class="card-body">
+                    <h5 class="card-title">Data Analysis</h5>
+                    <br>
+                    <p class="card-text">Proficient in leveraging statistical methods, data visualization, and machine learning techniques to extract actionable insights and drive data-driven decision-making.
+                    </p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/cost_management.jpg" class="card-img-top" alt="Power BI">
+                    <div class="card-body">
+                    <h5 class="card-title">Cost Management</h5>
+                    <br>
+                    <p class="card-text">Skilled in optimizing budgets, reducing operational costs, and implementing cost-saving strategies to enhance financial performance and efficiency.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/excel.png" class="card-img-top" alt="Excel">
+                    <div class="card-body">
+                    <h5 class="card-title">Microsoft Excel</h5>
+                    <br>
+                    <p class="card-text">Advanced expertise in Microsoft Excel, including data analysis, complex formulas, pivot tables, and creating visually compelling charts for effective data presentation.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/python.png" class="card-img-top" alt="Python">
+                    <div class="card-body">
+                    <h5 class="card-title">Python</h5>
+                    <br>
+                    <p class="card-text">Capable of using Python for automating tasks, performing data analysis, and developing simple scripts to enhance workflow efficiency.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/powerbi.png" class="card-img-top" alt="Cost Management">
+                    <div class="card-body">
+                    <h5 class="card-title">Power BI</h5>
+                    <br>
+                    <p class="card-text">Proficient in using Power BI to create interactive dashboards, visualize complex data, and deliver insightful business intelligence reports.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <p>John Reck Benedicto</p>
-        <img src="" alt="Linkedin" class="socials">
-        <img src="" alt="Github" class="socials">
+        <div class="links">
+            <a href="https://www.linkedin.com/in/johnreckbenedicto/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://github.com/login" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+        </div>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
