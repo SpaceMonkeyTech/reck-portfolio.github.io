@@ -288,7 +288,7 @@ footer {
 /* About Page */
 
 #about_summary {
-    padding-top: 150px;
+    padding-top: 7rem;
 }
 
 .about_text h1 {
@@ -425,13 +425,13 @@ footer {
 /* Portfolio Page */
 
 .portfolio-page {
-    padding-top: 150px;
+    padding-top: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #1F1D1D;
+    background-color: #DB4C40;
     color: #EFF1F3;
 }
 
@@ -469,6 +469,46 @@ footer {
 
 /* Licenses and Certifications Page */
 
+.certificates {
+    width: 100vw;
+    height: 80%vh;
+    padding-top: 10rem;
+    padding-bottom: 2em;
+    background-color: #1F1D1D;
+    color: #EFF1F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.certificates div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.certificates div img{
+    width: 40%;
+    border-radius: 1rem;
+}
+
+.certificates div h2 {
+    width: 40%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.certificates div p {
+    width: 40%;
+    text-align: justify;
+    font-weight: 300;
+}
+
 
 @media (max-width: 600px) {
     nav .checkbox {
@@ -479,7 +519,7 @@ footer {
         position: absolute;
         width: 100%;
         height: 80vh;
-        top: 120px;
+        top: 7rem;
         left: -100%;
         background-color: #1F1D1D;
         flex-direction: column;
