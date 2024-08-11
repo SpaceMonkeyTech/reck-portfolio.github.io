@@ -22,7 +22,7 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: #EFF1F3;
 }
 
@@ -233,7 +233,7 @@ ul li a:active {
 }
 
 .carousel-caption {
-    color: #EFF1F3;
+    color: #1F1D1D;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
