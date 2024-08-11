@@ -151,7 +151,6 @@ ul li a:active {
     font-size: 1em;
     text-align: center;
     font-weight: 400;
-    /* border-bottom: 1rem solid #506276b3; */
 }
 
 .hero_p {
@@ -431,7 +430,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #DB4C40;
+    background-color: #1F1D1D;
     color: #EFF1F3;
 }
 
@@ -511,6 +510,9 @@ footer {
 
 
 @media (max-width: 600px) {
+
+    /* HOME PAGE */
+
     nav .checkbox {
         display: block;
     }
@@ -538,5 +540,147 @@ footer {
         left: 0;
     }
 
+    .hero {
+        padding-top: 7.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .hero_h1 h2 {
+        display: none;
+    }
     
+    .hero .hero_p {
+        align-items: center;
+    }
+    .hero_p {
+        width: 65%;
+    }
+
+    .hero_p .back_card {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    main .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    main .about img {
+        height: 40%;
+    }
+
+    main .about .about_text {
+        width: 80%;
+        text-align: center;
+    }
+
+    .portfolio {
+        padding-top: 6.5rem;
+        padding-bottom: 5rem;
+    }
+
+    #carouselExampleCaptions {
+        width: 90%;
+        height: auto;
+    }
+
+    .carousel-caption {
+        color: #EFF1F3;
+        font-size: 2rem;
+    }
+
+    .cta {
+        padding-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .cta img {
+        width: 80%;
+    }
+
+    /* ABOUT PAGE */
+    #about_summary {
+        padding-top: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        background-color: #1F1D1D;
+    }
+
+    .about_text #summary {
+        font-size: 0.8em;
+    }
+
+    #about_summary .about_text {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    .education {
+        padding-top: 5rem;
+        font-size: 1em;
+    }
+
+    .education .about_text img {
+        width: 40%;
+    }
+
+    .experience {
+        padding-top: 8rem;
+        background-image: url(assets/images/quantity_surveying.jpg);
+        background-position: center;
+        background-color: #506276;
+        background-size: cover;
+        background-blend-mode:color-burn;
+        color: #EFF1F3;
+    
+    }
+
+    .experience #exp img {
+        display: none;
+    }
+
+    .experience #exp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience #exp p {
+        width: 50%;
+        font-weight: 350;
+    }
+
+    .skills {
+        height: 200vh;
+    }
+
+    .skills #skills_arrangement{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }   
+
+    .skills #skills_arrangement .card {
+        width: 30% !important;
+    }
 }
